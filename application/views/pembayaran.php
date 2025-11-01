@@ -57,14 +57,17 @@
         </div>
         <div class="col-md-7">
             <p>Kirim Bukti Pembayaran</p>
-            <b>No.Rek BRI: 5665-0102-7653-530 (SITI MAISAROH)</b><br>
-            <b>No.Rek Mandiri: 1140015104717 (SITI MAISAROH)</b><br>
-            <b>No.Rek BCA: 6185172345 (SITI MAISAROH)</b>
+            <b>BANK Mandiri: 1520098305721 (YULIANA ARIEF)</b><br>
+            <b>No.Rek BRI: 769801010954534 (YULIANA ARIEF)</b><br>
             <br><br><br>
             
             <div class="alert alert-info">
                 Total Tagihan Anda: <strong>Rp. <?= number_format($detail["totalbeli"]); ?> <br>(Sudah Termasuk biaya pengiriman)</strong>
             </div>
+
+            <p>
+                <a href="<?= base_url('index.php/pembayaran/midtrans/create/' . $detail['idbeli']); ?>" class="btn btn-success">Bayar dengan QRIS (Midtrans)</a>
+            </p>
             
             <form method="post" action="<?= base_url('index.php/pembayaran/uploadBukti/' . $detail['idbeli']); ?>" enctype="multipart/form-data">
                 <div class="form-group">

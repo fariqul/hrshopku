@@ -63,10 +63,23 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
+// Load Composer autoload & .env if available (for secrets like Midtrans keys)
+if (file_exists(__DIR__.'/vendor/autoload.php')) {
+	require __DIR__.'/vendor/autoload.php';
+	if (class_exists('Dotenv\\Dotenv')) {
+		try {
+			$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+			$dotenv->safeLoad();
+		} catch (Throwable $e) {
+			// ignore loading errors in development
+		}
+	}
+}
+
 switch (ENVIRONMENT)
 {
 	case 'development':
-		error_reporting(-1);
+		error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 		ini_set('display_errors', 1);
 	break;
 

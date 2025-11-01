@@ -1,7 +1,7 @@
 <?php $this->load->view('header'); ?>
 
 <!-- Form Pencarian -->
-<div class="hero-wrap hero-bread" style="background-color: #dc3545;">
+<!--<div class="hero-wrap hero-bread" style="background-color: #dc3545;">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center text-white text-light">
@@ -13,11 +13,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <br>
 
-<div class="container bg-light ">
+<div class="container bg-transparent ">
     <form action="<?= base_url('index.php/produk'); ?>" method="get" class="d-flex justify-content-center">
         <div class="input-group w-75">
             <input type="text" class="form-control" name="search" placeholder="Search products..." value="<?= isset($_GET['search']) ? $_GET['search'] : ''; ?>" aria-label="Search products">

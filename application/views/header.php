@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>HRSHOPKU</title>
+    <link rel="icon" type="image/x-icon" href= "<?= base_url('assets/home/images/logo.png'); ?>">
     <!-- Link CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/home/css/open-iconic-bootstrap.min.css'); ?>">
@@ -30,14 +31,14 @@
                 <div class="row d-flex">
                     <div class="col-md pr-4 d-flex topper align-items-center">
                         <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                        <span class="text">+ 1235 2355 98</span>
+                        <span class="text">0823-9392-2833</span>
                     </div>
                     <div class="col-md pr-4 d-flex topper align-items-center">
                         <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                        <span class="text">youremail@email.com</span>
+                        <span class="text">hrshopku@gmail.com</span>
                     </div>
                     <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-                        <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+                        <span class="text">HRShopku Baju Bodo</span>
                     </div>
                 </div>
             </div>
@@ -56,8 +57,8 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="<?= base_url('/index.php/customorders') ?>" class="nav-link">Costum Produk</a></li>
+                <li class="nav-item"><a href="<?= base_url('/') ?>" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="<?= base_url('/index.php/customorders') ?>" class="nav-link"> Pesan Khusus</a></li>
                 <li class="nav-item"><a href="<?= site_url('produk') ?>" class="nav-link">Produk</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
@@ -74,7 +75,7 @@
                             <a class="dropdown-item" href="<?= base_url('index.php/akun') ?>">Profil Akun</a>
                             <a class="dropdown-item" href="<?= base_url('index.php/keranjang') ?>">Keranjang</a>
                             <a class="dropdown-item" href="<?= base_url('index.php/riwayat') ?>">Riwayat Pembelian</a>
-                            <a class="dropdown-item" href="<?= base_url('index.php/custom-order/history') ?>">Riwayat Costum Order</a>
+                            <a class="dropdown-item" href="<?= base_url('index.php/custom-order/history') ?>">Riwayat Pesan Khusus</a>
                             <a class="dropdown-item" href="<?= site_url('login/logout') ?>">Logout</a>
                         <?php else : ?>
                             <a class="dropdown-item" href="<?= base_url('index.php/login') ?>">Login</a>

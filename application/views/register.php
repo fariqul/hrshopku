@@ -1,5 +1,5 @@
 <?php $this->load->view('header'); ?>
-<div class="hero-wrap hero-bread" style="background-image: url('<?= base_url('assets/home/images/fc2.jpg'); ?>');">
+<!--<div class="hero-wrap hero-bread" style="background-image: url('<?= base_url('assets/home/images/fc2.jpg'); ?>');">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
@@ -8,10 +8,13 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <section id="home-section" class="ftco-section">
     <div class="container mt-4">
+        <div class="col-md-9 ftco-animate text-left">
+            <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url(); ?>">Beranda</a></span> <span>Daftar</span></p>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-5 my-auto">
                 <img width="100%" src="<?= base_url('assets/foto/daftar.png'); ?>">
@@ -50,6 +53,7 @@
                         <button class="btn btn-danger btn-block" name="daftar">Daftar</button>
                     </div>
                 </form>
+                <p>Sudah punya akun? <a href="<?php echo base_url('index.php/login'); ?>">Login di sini</a></p>
             </div>
         </div>
     </div>

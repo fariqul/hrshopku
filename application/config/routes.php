@@ -97,3 +97,7 @@ $route['penjahit/history'] = 'CustomOrderController/historyPenjahit';
 $route['penjahit/update-status/(:num)'] = 'CustomOrderController/updateStatusPenjahit/$1';
 
 $route['penjahit/dashboard'] = 'admin/indexPenjahit';
+
+// Midtrans QRIS/Snap
+$route['pembayaran/midtrans/create/(:num)'] = 'pembayaran/create_midtrans/$1';
+$route['pembayaran/midtrans/notif'] = 'pembayaran/midtrans_notif';

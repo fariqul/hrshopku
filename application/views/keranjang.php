@@ -4,8 +4,11 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('') ?>">Home</a></span> <span>Keranjang</span></p>
-                <h1 class="mb-0 bread"> Keranjang</h1>
+                <p class="breadcrumbs">
+                    <span class="mr-2"><a href="<?= base_url('') ?>">Home</a></span>
+                    <span>Keranjang</span>
+                </p>
+                <h1 class="mb-0 bread">Keranjang</h1>
             </div>
         </div>
     </div>
@@ -32,14 +35,13 @@
                                 <?php foreach ($keranjang as $item) : ?>
                                     <tr class="text-center">
                                         <td class="product-remove">
-                                            <a href="<?= base_url('index.php/keranjang/hapus/' . $item['idproduk']) ?>">
+                                            <a href="<?= base_url('index.php/keranjang/hapus/' . $item['idproduk']) ?>" onclick="return confirmDeletion();">
                                                 <span class="ion-ios-close"></span>
                                             </a>
                                         </td>
 
                                         <td class="image-prod">
-                                        <div class="img" style="background-image:url('<?= base_url('assets/foto/' . $item['fotoproduk']); ?>');"></div>
-
+                                            <div class="img" style="background-image:url('<?= base_url('assets/foto/' . $item['fotoproduk']); ?>');"></div>
                                         </td>
 
                                         <td class="product-name">
@@ -65,7 +67,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
-                <p class="text-center"> 
+                <p class="text-center">
                     <a href="<?= base_url('') ?>" class="btn btn-warning"><i class="fa fa-cart-plus"></i> Lanjutkan Belanja</a>
                     &nbsp;
                     <a href="<?= base_url('index.php/checkout') ?>" class="btn btn-danger">Checkout</a>
@@ -76,4 +78,12 @@
 </section>
 
 <?php $this->load->view('footer'); ?>
+
+<script>
+    function confirmDeletion() {
+        // Menampilkan konfirmasi dengan pesan dalam bahasa Indonesia
+        var result = confirm("Apakah Anda yakin ingin menghapus item ini dari keranjang?");
+        return result; // Jika pengguna klik "OK", link akan dilanjutkan, jika "Cancel", aksi dibatalkan
+    }
+</script>
 

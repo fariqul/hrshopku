@@ -17,7 +17,7 @@
 <div id="wrapper">
         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:rgb(191, 50, 95);">
             <a class="sidebar-brand d-flex align-items-center justify-content-center text-white" href="<?= site_url('admin/beranda'); ?>">
-                <div class="sidebar-brand-text mx-3">HR Shopku Baju Bondo
+                <div class="sidebar-brand-text mx-3">HRSHOPKU BAJU BODO
                 </div>
             </a>
             <hr class="sidebar-divider">

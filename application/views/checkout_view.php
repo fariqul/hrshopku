@@ -107,7 +107,11 @@
                                     <option value="COD">COD (Cash on Delivery)</option>
                                 </select>
                             </div>
+                            <div class="form-group d-flex justify-content-between align-items-center mt-4">
+                                <a href="<?= site_url('produk') ?>" class="btn btn-warning btn-lg">
+                                     Kembali </a>
                             <button class="btn btn-danger pull-right btn-lg" type="submit" name="checkout">Checkout</button>
+                            </div>
                         </div>
                     </div>
                 <?= form_close() ?>

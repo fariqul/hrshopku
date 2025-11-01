@@ -125,6 +125,34 @@ class CI_Loader {
 		'user_agent' => 'agent'
 	);
 
+	/**
+	 * Session library instance
+	 *
+	 * @var	object
+	 */
+	public $session;
+
+	/**
+	 * Benchmark library instance
+	 *
+	 * @var	object
+	 */
+	public $benchmark;
+
+	/**
+	 * Config library instance
+	 *
+	 * @var	object
+	 */
+	public $config;
+
+	/**
+	 * Load library instance
+	 *
+	 * @var	object
+	 */
+	public $load;
+
 	// --------------------------------------------------------------------
 
 	/**

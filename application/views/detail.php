@@ -3,6 +3,9 @@
     <div class="container">
     <div class="row">
     <div class="col-lg-6 mb-5">
+    <div class="col-md-9 ftco-animate text-left">
+        <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('index.php/produk'); ?>">Produk</a></span> <span>Detail Produk</span></p>
+    </div>
         <a href="<?php echo base_url('assets/foto/') . $detail['fotoproduk']; ?>" class="image-popup">
             <img src="<?php echo base_url('assets/foto/') . $detail['fotoproduk']; ?>" class="img-fluid" alt="">
         </a>
@@ -19,7 +22,7 @@
                 </div>
                 <p>Sisa Produk: <?php echo $detail['stokproduk']; ?></p>
             </div>
-            <button name="beli" class="btn btn-success" style="background-color: #000 !important; border-color: #fff !important;">Add to Cart</button>
+            <button name="beli" class="btn btn-success" style="background-color: #000 !important; border-color: #fff !important;">Tambah ke Keranjang</button>
         </form>
     </div>
 </div>

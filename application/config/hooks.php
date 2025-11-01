@@ -11,3 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/userguide3/general/hooks.html
 |
 */
+
+$hook['pre_system'][] = array(
+    'class'    => 'IntrusionDetection',
+    'function' => 'check_request',
+    'filename' => 'IntrusionDetection.php',
+    'filepath' => 'hooks'
+);
